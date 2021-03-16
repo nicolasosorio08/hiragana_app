@@ -35,7 +35,7 @@ def random_hiragana(hiragana_answer, hiragana_key, hiragana_path):
 
 
 #never shows at the begining the u for random
-def hiragana_ans(nico_list, nico_path):
+def hiragana_ans(hiragana_list_2, hiragana_list_2):
     hiragana_answer = hiragana_input.get().lower()
     hiragana_label.config(text=hiragana_input.get().lower())
 
@@ -51,7 +51,7 @@ def hiragana_ans(nico_list, nico_path):
 
     hiragana_input.delete(0,'end')
 
-    random_hiragana(hiragana_answer,nico_list, nico_path)
+    random_hiragana(hiragana_answer,(hiragana_list_2, hiragana_path_2)
 
 def hiragana(initial_hira, hira_list, hira_path):
     hiding()
